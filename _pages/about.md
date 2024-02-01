@@ -2,7 +2,6 @@
 title: "About"
 permalink: /about
 toc: true
-
 layout: splash
 header:
     overlay_image: '/assets/images/clouds.jpg'
@@ -13,20 +12,27 @@ feature_row:
   - image_path: /assets/images/scout.png
 
   - image_path: /assets/images/me_b&w.png
+    
 
   - image_path: /assets/images/elk_canada.png
+ 
 ---
 
 <figure style="width: 50%" class="align-center"> 
   <img src="/assets/images/me_landscape.jpg" alt="">
 </figure>
 
-About Me
-========
+
+---
+
+<figure style="width: 50%" class="align-center"> 
+  <img src="/assets/images/me_landscape.jpg" alt="">
+</figure>
+
 
 Hello! 
 
-## <strong>SCIENCE INTERESTS</strong><br /><br />
+## <strong>SCIENCE INTERESTS</strong>
 I am currently a second-year Ph.D. student in <strong>Dr. Bradley Voytek's lab</strong>. My research revolves around unraveling the intricate relationship between peripheral and cortical dynamics. Specifically, my focus lies in investigating the <strong>impact of cardiac signals on scalp electroencephalography (EEG)</strong>. By delving into the nuances of how cardiac activity influences neural processes, my goal is to contribute valuable insights to our understanding of the complex interplay between physiological signals and brain function.
 
 In addition to my scientific research, I am deeply committed to advancing open science practices within the neuroscientific community. I actively advocate for the use of open data sets and accessible code, emphasizing transparency and collaboration. As part of this commitment, I contribute to the creation of tutorials that guide individuals through our code, promoting a more inclusive and collaborative research environment.
