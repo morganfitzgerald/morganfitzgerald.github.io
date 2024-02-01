@@ -4,8 +4,8 @@ permalink: /
 hidden: true
 header:
   overlay_image: /assets/images/splash/background.jpg
-excerpt: >
-  [WELCOME TO MY RESEARCH]
+#excerpt: >
+ # [WELCOME TO MY RESEARCH]
 feature_row:
   - image_path: /assets/images/splash/icon_publications.png
     title: "PUBLICATIONS"
@@ -23,7 +23,7 @@ feature_row:
   #   btn_class: "btn--primary"
   #   btn_label: "VIEW OUR CODE"
 
-  - image_path: /assets/images/splash/icon_code.png
+  - image_path: /assets/images/splash/icon_projects.png
     title: "PROJECTS"
     url: "/projects"
     btn_class: "btn--primary"
@@ -44,9 +44,9 @@ feature_row:
 <html>
   <div align="center">
     <h1>
-      <span style="color: #2dc3ac; font-size: 2rem; font-weight:normal;">[</span>
+      <span style="color: #2857A7; font-size: 2rem; font-weight:normal;">[</span>
       Projects, publications, and outreach!
-      <span style="color: #2dc3ac; font-size: 2rem; font-weight:normal;">]</span>
+      <span style="color: #2857A7; font-size: 2rem; font-weight:normal;">]</span>
     </h1>
   </div>
 
