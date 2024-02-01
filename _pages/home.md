@@ -4,6 +4,7 @@ permalink: /
 hidden: true
 header:
   overlay_image: /assets/images/splash/background.jpg
+classes: wide
 #excerpt: >
  # [WELCOME TO MY RESEARCH]
 feature_row:

@@ -8,7 +8,7 @@ main:
         url: /outreach
 - title: Publications
   url: /publications
-- title: Code & Data
+- title: Code
   url: https://github.com/morganfitzgerald
 - title: Contact
   url: /contact
