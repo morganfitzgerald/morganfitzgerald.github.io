@@ -1,5 +1,6 @@
 GEM
   remote: https://rubygems.org/
+  gem "webrick", "~> 1.8"
   specs:
     activesupport (6.0.3.6)
       concurrent-ruby (~> 1.0, >= 1.0.2)
