@@ -1,56 +1,36 @@
 # Welcome to Jekyll!
 #
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
+# This config file is meant for settings that affect your entire site, values
+# which you are expected to set up once and rarely need to edit after that.
 # For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+# `jekyll serve`. If you change this file, please restart the server process.
+
+# Theme Settings
 #
-# If you need help with YAML syntax, here are some quick references for you:
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+# Review documentation to determine if you should use `theme` or `remote_theme`
+# https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
-title: Morgan Fitzgerald
-email: mofitzgerald@health.ucsd.edu
-description: >- # this means to ignore newlines until "baseurl:"
-  Website description here
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-#twitter_username: jekyllrb
-github_username:  morganfitzgerald
+# theme                  : "minimal-mistakes-jekyll"
+remote_theme             : "mmistakes/minimal-mistakes@4.20.1"
+minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
-# Build settings
-
-#Theme
-remote_theme: "mmistakes/minimal-mistakes@4.20.1"
-minimal_mistakes_skin    : "default" 
-
-#Misc
-repository               : morganfitzgerald/morganfitzgerald.github.io
+# Misc
+repository               : ryanhammonds/ryanhammonds.github.io
 github                   : [metadata]
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Morgan Fitzgerald"
+title                    : "VOYTEKlab"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Morgan Fitzgerald"
-description              : "Morgan Fitzgerald"
+name                     : "VOYTEKlab"
+description              : "VOYTEKlab"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -92,8 +72,6 @@ bing_site_verification   :
 yandex_site_verification :
 naver_site_verification  :
 
-
-
 # Social Sharing
 twitter:
   username               :
@@ -121,7 +99,7 @@ footer:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/morganfitzgerald/"
+      url: "https://github.com/voytekresearch/"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
@@ -211,9 +189,6 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
   - jekyll-redirect-from
-#   plugins:
-# - jekyll-remote-theme
-#   # - jekyll-include-cache
 
 # mimic GitHub Pages with --safe
 whitelist:
