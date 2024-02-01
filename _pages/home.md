@@ -2,8 +2,8 @@
 layout: splash
 permalink: /
 hidden: true
-#header:
-  #overlay_image: /assets/images/splash/background.jpg
+header:
+  overlay_image: /assets/images/splash/background.jpg
 excerpt: >
   [WELCOME TO MY RESEARCH]
 feature_row:
@@ -22,17 +22,18 @@ feature_row:
   #   url: "/code"
   #   btn_class: "btn--primary"
   #   btn_label: "VIEW OUR CODE"
+
+  - image_path: /assets/images/splash/icon_code.png
+    title: "PROJECTS"
+    url: "/projects"
+    btn_class: "btn--primary"
+    btn_label: "MY PROJECTS"
+
   - image_path: /assets/images/splash/icon_outreach.png
     title: "OUTREACH"
     url: "/outreach"
     btn_class: "btn--primary"
     btn_label: "FIND OUT MORE"
-
-  - image_path: /assets/images/splash/icon_outreach.png
-    title: "ABOUT"
-    url: "/about"
-    btn_class: "btn--primary"
-    btn_label: "ABOUT ME"
   # - image_path: /assets/images/splash/icon_lab.png
   #   title: "OUR LAB"
   #   url: "/members"
@@ -44,7 +45,7 @@ feature_row:
   <div align="center">
     <h1>
       <span style="color: #2dc3ac; font-size: 2rem; font-weight:normal;">[</span>
-      Ongoing projects, publications, outreach efforts and more!
+      Projects, publications, and outreach!
       <span style="color: #2dc3ac; font-size: 2rem; font-weight:normal;">]</span>
     </h1>
   </div>
