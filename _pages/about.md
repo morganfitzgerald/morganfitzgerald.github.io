@@ -39,7 +39,7 @@ In addition to my scientific research, I am deeply committed to advancing open s
     - At UCSB, my interest in the interactions between the human brain and body led me to [Dr. Scott Grafton's](https://labs.psych.ucsb.edu/grafton/scott/) Action and Cognition Lab. My work centered on validating a novel single-electrode impedance cardiography (ICG) recording device. This introduced me to cardiovascular analysis tools and highlighted the link between heart function and cognition.
 
     - During my senior year, I completed my honors thesis under the guidance of [Dr. Emily Goard-Jacob's](https://jacobs.psych.ucsb.edu/). My research probed the role of endogenous fluctuations in female steroid hormones on cerebellar functional dynamics, employing functional magnetic resonance (fMRI) techniques. 
-    - The outcomes of this work culminated in a significant achievement—a first-author publication. For more details on this research, you can access the publication [here](https://doi.org/10.1038/s41598-020-77779-4) <br /><br />
+    - The outcomes of this work culminated in a significant achievement—a first-author publication. For more details on this research, you can access the publication [here](https://doi.org/10.1038/s41598-020-77779-4). <br /><br />
 
 - For my post-bach work, I joined Dr. Matthew Panizzon's lab at <strong>UC San Diego</strong>. There, I
 continued researching brain-body interactions through the impact of hormone suppression on cognition.
