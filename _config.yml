@@ -15,16 +15,16 @@ remote_theme             : "mmistakes/minimal-mistakes@4.20.1"
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Misc
-repository               : ryanhammonds/ryanhammonds.github.io
+repository               : morganfitzgerald/morganfitzgerald.github.io
 github                   : [metadata]
 
 # Site Settings
 locale                   : "en-US"
-title                    : "VOYTEKlab"
+title                    : "morganfitzgerald"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "VOYTEKlab"
-description              : "VOYTEKlab"
+name                     : "morganfitzgerald"
+description              : "morganfitzgerald"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -99,7 +99,7 @@ footer:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/voytekresearch/"
+      url: "https://github.com/morganfitzgerald/"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
