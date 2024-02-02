@@ -6,4 +6,32 @@ toc: true
 
 Outreach
 ========
-About my outreach here 
+
+My Advocacy for Diversity and Inclusion in Science
+
+## <strong>Background and Awareness:</strong>
+
+In 2023, I acknowledge the ongoing underrepresentation of women, minorities, and individuals with disabilities in science, as highlighted by the NSF.
+I recognize the profound impact of this lack of diversity on both the research landscape and society as a whole.
+
+## <strong>Community EngagementB:</strong>
+
+At UCSB, my commitment to diversity in science led me to collaborate with Girls Inc. of Santa Barbara.
+I served as a mentor for over 50 female K-12 students, organizing hands-on learning experiences and lab tours.
+Actively participated in UCSB's K-12 Science Outreach Committee, developing interactive science lessons for underprivileged schools.
+
+## <strong>UCSD Involvement:</strong>
+
+Joining Girls Inc. of San Diego and Colors of the Brain (CoB) at UCSD, I played various roles in promoting diversity.
+Within CoB, I took on responsibilities as a workshop leader, mentor, and Outreach Coordinator, making a meaningful impact.
+Developed and led workshops, empowering students with programming and neural signal processing skills.
+Mentored a student in her research project on maternal behavior, reinforcing my commitment to supporting diverse students in science.
+
+## <strong>Advocacy and Public Scientific Literacy:</strong>
+
+As a scientist living with a disability, I am dedicated to increasing public scientific literacy.
+I manage an influential outreach blog and Instagram page, reaching a community of over 20,000 individuals.
+I distill complex scientific insights into accessible content on the mind-body connection, chronic pain, and disability.
+Collaborate with nonprofits to advocate for meaningful legislative change in research funding and inclusion.
+Advocate for prioritizing research and laboratories that champion diversity and address issues directly related to public well-being.
+

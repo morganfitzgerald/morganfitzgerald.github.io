@@ -33,5 +33,5 @@ Note that not all of these will appear in peer review with the same titles as fo
     
 </ul>
 
-<a href="{{'/assets/images/posts/voytek_oscillations.jpg' | relative_url }}"><img class=" size-large wp-image-150 aligncenter" src="{{'/assets/images/posts/voytek_oscillations.jpg' | relative_url }}" alt="voytek_oscillations" width="1024" height="486" /></a>
-</html>
+<!-- <a href="{{'/assets/images/posts/voytek_oscillations.jpg' | relative_url }}"><img class=" size-large wp-image-150 aligncenter" src="{{'/assets/images/posts/voytek_oscillations.jpg' | relative_url }}" alt="voytek_oscillations" width="1024" height="486" /></a>
+</html> -->
