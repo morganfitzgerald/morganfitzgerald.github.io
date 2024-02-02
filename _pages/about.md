@@ -3,25 +3,22 @@ title: "About"
 permalink: /about
 toc: true
 layout: splash
-#header:
-#    overlay_image: '/assets/images/me_landscape.png'
-# classes: wide
+header:
+  overlay_image: '/assets/images/SD.jpg'
+classes: wide
 author_profile: true
 
 read_time: False
-# feature_row:
-#   - image_path: /assets/images/scout.png
 
-#   - image_path: /assets/images/me_b&w.png
-    
+feature_row:
+  - image_path: /assets/images/elk_canada.png
 
-#   - image_path: /assets/images/elk_canada.png
- 
 ---
+<br /><br />
 
 I am a second-year Ph.D. student in [Dr. Bradley Voytek's](https://voyteklab.com/) lab. My interests revolve around unraveling the relationship between peripheral and cortical dynamics. Specifically, my focus lies in investigating the <strong>impact of cardiac signals on scalp electroencephalography (EEG)</strong>. [Read more](https://morganfitzgerald.github.io/projects) about my ongoing projects.
 
-In addition to my research, I am deeply committed to advancing open science and diversity within the neuroscientific community. You can read more about my outreach efforts [here](https://morganfitzgerald.github.io/outreach)
+In addition to my research, I am deeply committed to advancing open science and diversity within the neuroscientific community. You can read more about my outreach efforts [here](https://morganfitzgerald.github.io/outreach).
 
 ## <strong>BACKGROUND</strong>
 - Raised in <strong>Boulder, CO</strong> and <strong>San Diego, CA</strong>.
@@ -36,11 +33,13 @@ In addition to my research, I am deeply committed to advancing open science and 
   - My independent project focused on the effect of the early life hormone milieu on migraine risk. 
     - Read the publication [here](https://doi.org/10.3389/fpain.2021.766718). <br /><br />
 
-- I joined the <strong>Neuroscience Ph.D. program at UC San Diego<s/trong> in August of 2022 and subsequently joined <strong>Dr. Bradley Voytek's</strong> lab in June of 2023. 
+- I joined the <strong>Neuroscience Ph.D. program at UC San Diego</strong> in August of 2022 and subsequently joined <strong>Dr. Bradley Voytek's</strong> lab in June of 2023. 
 
 ## <strong>PERSONAL LIFE</strong>
-Outside of academia, I enjoy maintaining my college tennis skills by playing in local clinics. Beyond the tennis court, I find joy in photography, baking, and learning to surf. 
+I enjoy maintaining my college tennis skills by playing in local clinics. Beyond the tennis court, I find joy in photography, baking, and learning to surf. 
 
+---
 
-
-<!-- {% include feature_row %} -->
+<!-- <html>
+  {% include feature_row %}
+</html> -->

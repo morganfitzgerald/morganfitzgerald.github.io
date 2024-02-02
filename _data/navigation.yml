@@ -2,7 +2,7 @@
 main:
 - title: About
   sublinks:
-      - title: About Me
+      - title: About
         url: /about
       - title: Outreach
         url: /outreach
@@ -10,5 +10,7 @@ main:
   url: /publications
 - title: Code
   url: https://github.com/morganfitzgerald
+- title: Projects 
+  url: /projects
 - title: Contact
   url: /contact

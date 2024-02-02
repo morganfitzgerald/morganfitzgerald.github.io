@@ -6,14 +6,15 @@
   position: fixed;
   top: 0;
   width: 100%;
-  max-width: 1500px;
-  background: white;
+  max-width: none;
+  background: #ffffff;
   -webkit-animation: $intro-transition;
   animation: $intro-transition;
   -webkit-animation-delay: 0.15s;
   animation-delay: 0.15s;
   z-index: 20;
   border-bottom: 1px solid $border-color;
+
 
   @include breakpoint($medium) {
     padding-left: $medium-pad;
@@ -43,7 +44,7 @@
   padding-right: .5em;
   -ms-flex-item-align: center;
   align-self: center;
-  font-weight: bold;
+  // font-weight: bold;
   // z-index: 20;
 }
 
