@@ -29,9 +29,6 @@ feature_row:
   <img src="/assets/images/me_landscape.jpg" alt="">
 </figure>
 
-
-Hello! 
-
 ## <strong>SCIENCE INTERESTS</strong>
 I am currently a second-year Ph.D. student in <strong>Dr. Bradley Voytek's lab</strong>. My research revolves around unraveling the intricate relationship between peripheral and cortical dynamics. Specifically, my focus lies in investigating the <strong>impact of cardiac signals on scalp electroencephalography (EEG)</strong>. By delving into the nuances of how cardiac activity influences neural processes, my goal is to contribute valuable insights to our understanding of the complex interplay between physiological signals and brain function.
 
@@ -54,4 +51,6 @@ continued researching brain-body interactions through the impact of hormone supp
 ## <strong>PERSONAL LIFE</strong>
 Outside of academia, I enjoy maintaining my college tennis skills by playing in local clinics. Beyond the tennis court, I find joy in various activities, including photography, baking, and learning to sufr. Lastly, I love taking long walks with my ever-enthusiastic Papillon, Scout.
 
+<html>
 {% include feature_row %}
+</html>
