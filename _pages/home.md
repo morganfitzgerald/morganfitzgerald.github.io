@@ -4,9 +4,9 @@ permalink: /
 hidden: true
 header:
   overlay_image: /assets/images/splash/background.jpg
-classes: wide
-#excerpt: >
- # [WELCOME TO MY RESEARCH]
+#classes: wide
+# excerpt: >
+#  [WELCOME]
 feature_row:
   - image_path: /assets/images/splash/icon_publications.png
     title: "PUBLICATIONS"
@@ -40,16 +40,21 @@ feature_row:
   #   url: "/members"
   #   btn_class: "btn--primary"
   #   btn_label: "LEARN MORE"
+
+  
 ---
 
 <html>
   <div align="center">
     <h1>
-      <span style="color: #2857A7; font-size: 2rem; font-weight:normal;">[</span>
-      Projects, publications, and outreach!
-      <span style="color: #2857A7; font-size: 2rem; font-weight:normal;">]</span>
+      <span style="color: #2857A7; font-size: 1.5rem; font-weight:normal;">[</span>
+      Take a look at what I am working on!
+      <span style="color: #2857A7; font-size: 1.5rem; font-weight:normal;">]</span>
+      <br><br>
     </h1>
   </div>
 
   {% include feature_row %}
+
+  {% include feature_row_custom %}
 </html>

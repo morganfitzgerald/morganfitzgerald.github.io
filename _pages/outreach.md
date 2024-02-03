@@ -9,12 +9,12 @@ Outreach
 
 My Advocacy for Diversity and Inclusion in Science
 
-## <strong>Background and Awareness:</strong>
+## <strong>Background:</strong>
 
 In 2023, I acknowledge the ongoing underrepresentation of women, minorities, and individuals with disabilities in science, as highlighted by the NSF.
 I recognize the profound impact of this lack of diversity on both the research landscape and society as a whole.
 
-## <strong>Community EngagementB:</strong>
+## <strong>Community Engagement at UCSB:</strong>
 
 At UCSB, my commitment to diversity in science led me to collaborate with Girls Inc. of Santa Barbara.
 I served as a mentor for over 50 female K-12 students, organizing hands-on learning experiences and lab tours.
@@ -27,7 +27,7 @@ Within CoB, I took on responsibilities as a workshop leader, mentor, and Outreac
 Developed and led workshops, empowering students with programming and neural signal processing skills.
 Mentored a student in her research project on maternal behavior, reinforcing my commitment to supporting diverse students in science.
 
-## <strong>Advocacy and Public Scientific Literacy:</strong>
+## <strong>Public Scientific Literacy:</strong>
 
 As a scientist living with a disability, I am dedicated to increasing public scientific literacy.
 I manage an influential outreach blog and Instagram page, reaching a community of over 20,000 individuals.
