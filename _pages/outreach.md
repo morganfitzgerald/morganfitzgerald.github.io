@@ -1,18 +1,18 @@
 ---
 title: "Outreach"
 permalink: /outreach
+layout: about
 toc: true
 ---
 
 Outreach
 ========
 
-My Advocacy for Diversity and Inclusion in Science
 
 ## <strong>Background:</strong>
 
-In 2023, I acknowledge the ongoing underrepresentation of women, minorities, and individuals with disabilities in science, as highlighted by the NSF.
-I recognize the profound impact of this lack of diversity on both the research landscape and society as a whole.
+Since entering the scientific domain, I have been keenly aware of the underrepresentation of women, minorities, and individuals with disabilities in science.
+I recognize the profound impact of this lack of diversity on both the research landscape and society as a whole, and the imperative need for change.
 
 ## <strong>Community Engagement at UCSB:</strong>
 

@@ -23,8 +23,9 @@ body {
   }
   
   .white-container {
-    display: inline-block; /* Display as inline block to center horizontally */
+    display: block; /* Display as inline block to center horizontally */
     padding: 20px;
+    // margin: 0 auto; /* Center horizontally by setting left and right margins to auto */
     // max-width: 800px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: white;

@@ -1,6 +1,7 @@
 ---
 title: "Publications"
 permalink: /publications
+layout: about
 toc: true
 ---
 
