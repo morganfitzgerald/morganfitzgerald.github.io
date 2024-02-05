@@ -1,7 +1,7 @@
 ---
 title: "Projects"
 permalink: /projects
-layout: about
+layout: projects
 toc: true
 ---
 
@@ -9,6 +9,11 @@ toc: true
 <h1>Projects</h1>
 <h3><span ><strong>Characterizing ECG Signals Across Age</strong></span></h3>
 <br><br>
+<!-- <video controls autoplay muted>
+  <source src="/assets/testvid.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video> -->
+
 Description here
 <ul>
 </ul>

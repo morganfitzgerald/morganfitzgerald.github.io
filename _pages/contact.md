@@ -17,12 +17,11 @@ feature_row_custom:
 Contact me directly at <a href="mailto:mofitzgerald@ucsd.edu">mofitzgerald@ucsd.edu</a>.
 <br><br>
 
-Or connect with me on [LinkedIn](https://www.linkedin.com/in/morgan-fitzgerald-71a201bb/).
-
 
 <br><br>
 <!-- <img src="{{'/assets/images/me_landscape.png' | relative_url }}" width="246" height="75">
 <br><br> -->
+
 
 {% include feature_row_custom %}
 </html>
