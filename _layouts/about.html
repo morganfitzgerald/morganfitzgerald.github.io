@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
+  <head>
+    {% include head.html %}
+    {% include head/custom.html %}
+    <style>
+      body {
+        font-size: 16px; /* Set your base font size */
+      }
+      h1 {
+        font-size: 2em; /* Set your desired font size for h1 */
+      }
+      h2 {
+        font-size: 1.5em; /* Set your desired font size for h2 */
+      }
+      h3 {
+        font-size: 1.2em; /* Set your desired font size for h3 */
+      }
+    </style>
+  </head>
+  <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
+    {% include_cached skip-links.html %}
+    {% include_cached browser-upgrade.html %}
+    {% include_cached masthead.html %}
+    <div class="initial-content">
+      <div class="white-container">
+        {{ content }}
+      </div>
+    </div>
+    {% if site.search == true %}
+      <div class="search-content">
+        {% include_cached search/search_form.html %}
+      </div>
+    {% endif %}
+    <div id="footer" class="page__footer">
+      <footer>
+        {% include footer/custom.html %}
+        {% include_cached footer.html %}
+      </footer>
+    </div>
+    {% include scripts.html %}
+  </body>
+</html>
