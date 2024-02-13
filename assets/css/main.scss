@@ -14,10 +14,17 @@ body {
   font-family: Avenir, "Avenir", sans-serif;
   line-height: 1.1;
   background-color: rgba(108, 143, 198, 0.2);
-  margin: 0; // Ensure body has no margin
+  // margin: 0; // Ensure body has no margin
   overflow-x: hidden; // Prevent horizontal scrolling
 }
 
+/* Style for the main content to follow */
+.main-content {
+  max-width: 1500px; // or whatever maximum width you prefer
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px; // Optional: add padding on the sides
+}
 // Styles specific to the "About" page
 .page-about {
   background-image: url('/assets/images/SD.jpg');
@@ -25,65 +32,6 @@ body {
   background-position: center;
   background-attachment: fixed;
   width: 100%; // Ensure the div takes full width
-}
-
-
-
-#background-video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -100;
-  object-fit: cover;
-}
-
-/* Style for the "Enter Site" button */
-.scroll-down {
-  display: inline-block; /* Makes the link behave like a block for padding */
-  padding: 10px 20px; /* Adjust padding to your liking */
-  border: 2px solid white; /* Creates the border around the link */
-  color: white; /* Sets the text color to white */
-  text-decoration: none; /* Removes underline from the link */
-  font-weight: bold; /* Makes the text bold */
-  background-color: transparent; /* Ensures background is transparent */
-  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
-}
-
-.scroll-down:hover, .scroll-down:focus {
-  background-color: white; /* Changes background to white on hover/focus */
-  color: black; /* Changes text color to black on hover/focus */
-}
-// .initial-block {
-//   position: relative;
-//   height: 100vh; /* Full viewport height */
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   text-align: center;
-//   overflow: hidden; /* Prevents video overflow */
-// }
-
-.initial-block {
-  width: 100vw; /* 100% of the viewport width */
-  height: 100vh; /* 100% of the viewport height */
-  position: relative; /* For positioning the overlay */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  overflow: hidden; /* Prevents video overflow */
-}
-
-
-.video-overlay {
-  z-index: 1; /* Ensure content is above the video */
-  color: #fff; /* Adjust based on your design */
-  /* Add more styles for overlay content here */
 }
 
 // Styles for containers with white background
@@ -95,18 +43,6 @@ body {
   text-align: left;
 }
 
-/* Style for the main content to follow */
-.main-content {
-  max-width: 1200px; // or whatever maximum width you prefer
-  margin-left: auto;
-  margin-right: auto;
-  // padding: 0 15px; // Optional: add padding on the sides
-}
-
-/* Smooth scrolling */
-html {
-  scroll-behavior: smooth;
-}
 
 // Media and embeds styles
 figure {
