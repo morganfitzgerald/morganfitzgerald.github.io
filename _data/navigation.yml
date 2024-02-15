@@ -1,0 +1,24 @@
+# main links
+main:
+- title: About
+  url: /about
+- title: Publications
+  url: /publications
+- title: Projects 
+  url: /projects
+
+# - title: Outreach
+#   url: /outreach
+
+- title: Contact
+  url: /contact
+
+
+  # - title: About
+  # sublinks:
+  #     - title: About
+  #       url: /about
+
+
+# - title: Code
+#   url: https://github.com/morganfitzgerald

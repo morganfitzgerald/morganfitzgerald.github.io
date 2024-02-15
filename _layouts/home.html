@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+
+  {% include head.html %}
+  {% include head/custom.html %}
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/home.css">
+  <style>
+    .initial-block {
+      position: relative;
+      width: 100%;
+      height: 100vh; /* Adjust this to control the height of the initial block */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #000; /* This will set the background color of the initial block to black */
+    }
+    canvas {
+      border: none;
+    }
+  </style>
+</head>
+<body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
+  {% include_cached skip-links.html %}
+  {% include_cached browser-upgrade.html %}
+  {% include_cached masthead.html %}
+
+<div class="initial-block">
+  <canvas id="ecgCanvas"></canvas>
+</div>
+
+<script>
+  // Ensure the "Raleway" font is loaded before drawing
+  document.fonts.load('10pt "Raleway"').then(function () {
+    const canvas = document.getElementById('ecgCanvas');
+    const ctx = canvas.getContext('2d');
+
+    canvas.width = document.querySelector('.initial-block').clientWidth;
+    canvas.height = document.querySelector('.initial-block').clientHeight;
+
+    const amplitude = 50;
+    const speed = 5;
+    // Use the entire canvas width for the wave, removing flatLineDuration
+    const frequency = 2 * Math.PI / canvas.width;
+    let frame = 0;
+
+    function draw() {
+      frame += 1;
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      // Draw the text with the loaded font
+      ctx.font = "120px 'Raleway'";
+      ctx.fillStyle = "white";
+      const text = "Morgan Fitzgerald";
+      const textWidth = ctx.measureText(text).width;
+      const textX = (canvas.width - textWidth) / 2;
+      const textY = canvas.height / 2 + 60;
+      ctx.fillText(text, textX, textY);
+
+      // Set up for drawing the sine wave
+      ctx.shadowBlur = 20;
+      ctx.shadowColor = "black";
+      ctx.strokeStyle = "black";
+      ctx.lineWidth = 4;
+
+      ctx.beginPath();
+      for (let x = 0; x <= canvas.width; x++) {
+        let y = canvas.height / 2 + amplitude * Math.sin(frequency * (x - frame * speed));
+        ctx.lineTo(x, y);
+      }
+      ctx.stroke();
+
+      requestAnimationFrame(draw);
+    }
+
+    draw();
+  });
+</script>
+
+
+<!-- New Block with White Container -->
+<div class="white-container-section">
+  <div class="white-container">
+    <!-- <h2>Discover More</h2> -->
+    <!-- <p>This is an example section with a white container around the content. It's perfect for highlighting important information or features of your site.</p> -->
+    <!-- You can add more content here as needed -->
+  </div>
+</div>
+
+
+<!-- Main Content Section (Rest of the Website) -->
+<div id="main-content" class="main-content">
+  <div class="initial-content">
+    {{ content }}
+  </div>
+
+  {% if site.search == true %}
+    <div class="search-content">
+      {% include_cached search/search_form.html %}
+    </div>
+  {% endif %}
+
+  <div id="footer" class="page__footer">
+    <footer>
+      {% include footer/custom.html %}
+      {% include_cached footer.html %}
+    </footer>
+  </div>
+</div>
+
+{% include scripts.html %}
+<!-- Optional: Add custom JS for smooth scrolling -->
+<script src="/assets/js/home.js"></script>
+
+</body>
+</html>
