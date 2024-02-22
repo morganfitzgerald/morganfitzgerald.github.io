@@ -2,7 +2,6 @@
 <html lang="en" class="no-js">
 <head>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
-
   <meta charset="utf-8">
 
 <!-- begin _includes/seo.html --><title>morganfitzgerald</title>
@@ -78,22 +77,10 @@
 
 <!-- end custom head snippets -->
 
-  <link rel="stylesheet" href="/assets/css/main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/assets/css/home.css">
-  <style>
-    .initial-block {
-      position: relative;
-      width: 100%;
-      height: 100vh; /* Adjust this to control the height of the initial block */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #000; /* This will set the background color of the initial block to black */
-    }
-    canvas {
-      border: none;
-    }
-  </style>
+ 
 </head>
 <body class="layout--home">
   <nav class="skip-links">
@@ -153,163 +140,53 @@
 </div>
 
 
+<!-- Initial block -->
 <div class="initial-block">
-  <canvas id="ecgCanvas"></canvas>
+  <canvas id="nameCanvas"></canvas>
+  <a href="#main-content" class="scroll-down-arrow">↓</a>
 </div>
-
-<script>
-  // Ensure the "Raleway" font is loaded before drawing
-  document.fonts.load('10pt "Raleway"').then(function () {
-    const canvas = document.getElementById('ecgCanvas');
-    const ctx = canvas.getContext('2d');
-
-    canvas.width = document.querySelector('.initial-block').clientWidth;
-    canvas.height = document.querySelector('.initial-block').clientHeight;
-
-    const amplitude = 50;
-    const speed = 5;
-    // Use the entire canvas width for the wave, removing flatLineDuration
-    const frequency = 2 * Math.PI / canvas.width;
-    let frame = 0;
-
-    function draw() {
-      frame += 1;
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-      // Draw the text with the loaded font
-      ctx.font = "120px 'Raleway'";
-      ctx.fillStyle = "white";
-      const text = "Morgan Fitzgerald";
-      const textWidth = ctx.measureText(text).width;
-      const textX = (canvas.width - textWidth) / 2;
-      const textY = canvas.height / 2 + 60;
-      ctx.fillText(text, textX, textY);
-
-      // Set up for drawing the sine wave
-      ctx.shadowBlur = 20;
-      ctx.shadowColor = "black";
-      ctx.strokeStyle = "black";
-      ctx.lineWidth = 4;
-
-      ctx.beginPath();
-      for (let x = 0; x <= canvas.width; x++) {
-        let y = canvas.height / 2 + amplitude * Math.sin(frequency * (x - frame * speed));
-        ctx.lineTo(x, y);
-      }
-      ctx.stroke();
-
-      requestAnimationFrame(draw);
-    }
-
-    draw();
-  });
-</script>
-
-
-<!-- New Block with White Container -->
-<div class="white-container-section">
-  <div class="white-container">
-    <!-- <h2>Discover More</h2> -->
-    <!-- <p>This is an example section with a white container around the content. It's perfect for highlighting important information or features of your site.</p> -->
-    <!-- You can add more content here as needed -->
-  </div>
-</div>
-
-
-<!-- Main Content Section (Rest of the Website) -->
+  <!-- Name Animation  -->
+    <script src="/assets/js/name_animation.js"></script>
+    
+<!-- Main Content Section -->
 <div id="main-content" class="main-content">
   <div class="initial-content">
-    <html>
-  <div align="center">
-    <!-- <h1>
-      <span style="color: #2857A7; font-size: 1.5rem; font-weight:normal;">[</span>
-      Take a look at what I am working on!
-      <span style="color: #2857A7; font-size: 1.5rem; font-weight:normal;">]</span>
-      <br><br> -->
-    <!-- </h1> -->
   </div>
 
-  
+  <div class="second-block">
+    <h1 class="second-block-h1">Interdisciplinary Scientist</h1>
+    <h2 class="second-block-h2">Multisystem Approach</h2>
+    <p>My research lies in the intersection between Neuroscience, Cognitivie Science, and Human Physiology.</p>
+    <a href="#projects" class="projects-button">Projects</a>
+  </div>
 
-<div class="feature__wrapper">
+    <!-- Vendiagram Animation  -->
+      <canvas id="vendiagramCanvas"></canvas>
+      <script src="/assets/js/vendiagram_animation.js"></script>
+      
 
-  
-    <div class="feature__item">
-      <div class="archive__item">
-        
-          <div class="archive__item-teaser">
-            <img src="/assets/images/splash/icon_publications.png" alt="" />
-            
-          </div>
-        
+  <!-- Science Intro Section -->
+  <div class="third-block">
+    <h1>I am passionate about understanding how our heart influences our brain.</h1>
+    <p>I probe the connection between heart function and brain activity,
+      focusing on how the heart's signals, particularly the shape of the heartbeat wave and
+      the '1/f signal', impact neural dynamics. This exploration is particularly aimed at
+      understanding the neural activity associated with cognitive abilities like memory and attention.
+      My goal is to uncover how age-realted changes in heart signals affect working memory.</p>
+    <p>This research underscores the importance of heart health in cognitive function, offering
+      new insights into aging and cognitive health by linking the condition of the heart
+      with brain performance.</p>
+  </div>
 
-        <div class="archive__item-body">
-          
-            <h2 class="archive__item-title">PUBLICATIONS</h2>
-          
-
-          
-
-          
-            <p><a href="/publications" class="btn btn--primary">VIEW MY PAPERS</a></p>
-          
-        </div>
-      </div>
+  <div class="fourth-block">
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>Here is a brief introduction about yourself. You can talk about your interests, what you do, and any other information you'd like visitors to know about you.</p>
+      <!-- Add more paragraphs or elements as needed -->
     </div>
-  
-    <div class="feature__item">
-      <div class="archive__item">
-        
-          <div class="archive__item-teaser">
-            <img src="/assets/images/splash/icon_projects.png" alt="" />
-            
-          </div>
-        
-
-        <div class="archive__item-body">
-          
-            <h2 class="archive__item-title">PROJECTS</h2>
-          
-
-          
-
-          
-            <p><a href="/projects" class="btn btn--primary">MY PROJECTS</a></p>
-          
-        </div>
-      </div>
+    <div class="about-image">
+      <img src="assets/images/me_bw_wavy.png" alt="A picture of me">
     </div>
-  
-    <div class="feature__item">
-      <div class="archive__item">
-        
-          <div class="archive__item-teaser">
-            <img src="/assets/images/splash/icon_outreach.png" alt="" />
-            
-          </div>
-        
-
-        <div class="archive__item-body">
-          
-            <h2 class="archive__item-title">CONTACT</h2>
-          
-
-          
-
-          
-            <p><a href="/contact" class="btn btn--primary">REACH ME</a></p>
-          
-        </div>
-      </div>
-    </div>
-  
-
-</div>
-
-
-
-</html>
-
   </div>
 
   
@@ -352,7 +229,7 @@
 
     </footer>
   </div>
-</div>
+
 
 
   <script src="/assets/js/main.min.js"></script>
@@ -365,8 +242,9 @@
 
 
 
-<!-- Optional: Add custom JS for smooth scrolling -->
-<script src="/assets/js/home.js"></script>
+
+<!-- Add custom JS for smooth scrolling -->
+<script src="/assets/js/scrolling.js"></script>
 
 </body>
 </html>
