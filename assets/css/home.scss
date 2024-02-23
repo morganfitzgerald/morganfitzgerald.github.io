@@ -1,5 +1,4 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
 ---
 *,
 *::before,
@@ -27,12 +26,40 @@ canvas {
   width: 100%;
   height: auto;
 }
+
+
 // Style for the main content
 .main-content {
   max-width: 1000px; // or whatever maximum width you prefer
   margin-left: auto;
   margin-right: auto;
   padding: 20px; // Corrected padding syntax
+}
+
+.large-heading-h1 {
+  font-size: 68px; /* Large font size for the main heading */
+  color: #fff; /* White text */
+  margin-bottom: 0px; /* Spacing below the heading */
+}
+
+.second-heading-h2 {
+  font-size: 55px; /* Large font size for the subheading */
+  color: #b6804d; /* Teal text color for subheading */
+  margin-top: 0;
+  margin-bottom: 50px; /* Spacing below the subheading */
+}
+
+.third-heading-h3 {
+  font-size: 45px; /* Large font size for the subheading */
+  color: #b6804d; /* Teal text color for subheading */
+  margin-top: 20;
+  margin-bottom: 20px; /* Spacing below the subheading */
+}
+
+
+.paragraph {
+  font-size: 20px; /* Smaller font size for the paragraph */
+  margin-bottom: 20px; /* Spacing below the paragraph */
 }
 
 // Style for initial scroll down arrow
@@ -59,15 +86,6 @@ canvas {
   }
 }
 
-// Styles for containers with white background
-.white-container {
-  display: block;
-  padding: 0px; // Corrected padding syntax, assuming 'px' was the intention
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  background-color: white;
-  text-align: left;
-}
-
 // Media and embeds styles
 figure {
   display: flex;
@@ -91,13 +109,32 @@ figure > a {
   display: block;
 }
 
-// Responsive figure styles
-@media (min-width: 37.5em) {
-  figure.half > a, figure.half > img, figure.half figcaption,
-  figure.third > a, figure.third > img, figure.third figcaption {
-    width: calc(33.3333% - 0.5em);
-  }
+.image-block {
+  position: relative;
+  display: inline-block;
 }
+
+.tooltip-text {
+  visibility: hidden;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  // padding: 5px 10px; /* Adjust padding for size */
+  font-size: 10px; /* Adjust font size for better fit */
+  
+  /* Adjusted position for bottom right */
+  position: absolute;
+  z-index: 1;
+  right: 0; /* Align to the right */
+  bottom: 0; /* Align to the bottom */
+  // transform: translate(0, 100%); /* Adjust to move tooltip below the image */
+}
+
+.image-block:hover .tooltip-text {
+  visibility: visible;
+}
+
 
 
 
@@ -129,23 +166,6 @@ figure > a {
   margin-top: 20;
 }
 
-.second-block-h1 {
-  font-size: 68px; /* Large font size for the main heading */
-  color: #fff; /* White text */
-  margin-bottom: 0px; /* Spacing below the heading */
-}
-
-.second-block-h2 {
-  font-size: 55px; /* Large font size for the subheading */
-  color: #b6804d; /* Teal text color for subheading */
-  margin-top: 0;
-  margin-bottom: 50px; /* Spacing below the subheading */
-}
-
-.second-block p {
-  font-size: 20px; /* Smaller font size for the paragraph */
-  margin-bottom: 20px; /* Spacing below the paragraph */
-}
 
 .projects-button {
   display: inline-block;
@@ -220,15 +240,128 @@ figure > a {
   border-radius: 4px; // Optional: Adds rounded corners to the image
 }
 
+.resume-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: transparent; // Transparent background for the button
+  border: 2px solid #fff; // White border
+  color: #fff; // White text
+  text-decoration: none; // No underline
+  font-size: 18px; // Button font size
+  transition: background-color 0.3s, color 0.3s; // Transition for hover effect
+}
 
+.resume-button:hover {
+  background-color: #fff; // White background on hover
+  color: #000; // Black text on hover
+}
+
+///
+
+// Adding the fifth block for Publications
+.fifth-block {
+  background-color: #000; /* Black background for better readability */
+  color: #fff; /* Whie text color for contrast */
+  padding: 50px 0; /* Space above and below the block content */
+  text-align: left; /* Aligns the text to the left */
+}
+
+.fifth-block-list {
+  list-style-type: none; /* Removes default list styling */
+  padding-left: 0; /* Aligns the list with the title */
+}
+
+.fifth-block-list li {
+  margin-bottom: 10px; /* Space between list items */
+  padding-left: 20px; /* Space for bullet point */
+  position: relative; /* Needed for absolute positioning of the custom bullet */
+}
+
+.fifth-block-list li::before {
+  content: ''; /* The actual bullet point */
+  width: 6px; /* Width of the custom bullet */
+  height: 6px; /* Height of the custom bullet */
+  background-color: #000; /* Bullet color */
+  border-radius: 50%; /* Makes the bullet round */
+  position: absolute; /* Positioning relative to the li */
+  left: 0; /* Aligns the bullet to the left */
+  top: 50%; /* Centers the bullet vertically */
+  transform: translateY(-50%); /* Ensures the centering is accurate */
+}
 
 ////////////////////////////
 ////////////////////////////
+/// 
+
+////////////////////////////
+// Sixth block for Projects with 4x2 layout
+.sixth-block {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 20px; // Adjust based on your spacing preference
+  color: #fff; // White text color
+  background-color: #000; // Black background
+  padding: 50px 0; // Space above and below
+}
+
+.sixth-block .text-block,
+.sixth-block .image-block {
+  display: flex;
+  align-items: center; // Aligns content vertically in the center
+  justify-content: center; // Centers content horizontally
+  padding: 20px; // Padding inside each block
+}
+
+.sixth-block .text-block {
+  text-align: justify; // Justifies the text within the text blocks
+}
+
+.sixth-block .image-block img {
+  max-width: 100%; // Ensure the image is responsive and doesn't overflow its container
+  height: auto; // Maintain aspect ratio
+  border-radius: 4px; // Optional: Adds rounded corners to the image
+}
+
+// Dividing lines
+.sixth-block::after,
+.sixth-block::before {
+  content: '';
+  position: absolute;
+  background-color: #fff; // White color for the dividing lines
+}
+
+.sixth-block::after {
+  // Vertical line
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px; // Thickness of the line
+  transform: translateX(-50%); // Centers the line
+}
+
+.sixth-block::before {
+  // Horizontal line
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 2px; // Thickness of the line
+  transform: translateY(-50%); // Centers the line
+}
+
+.full-width {
+  grid-column: 1 / -1; // Span from the first to the last column
+}
+////////////////////////////
+////////////////////////////
+/// 
+/// 
+/// // Responsive figure styles
 @media (min-width: 37.5em) {
-  figure.half > a, figure.half > img {
-    width: calc(50% - 0.5em);
+  figure.half > a, figure.half > img, figure.half figcaption,
+  figure.third > a, figure.third > img, figure.third figcaption {
+    width: calc(33.3333% - 0.5em);
   }
-
   figure.half figcaption {
     width: 100%;
   }
@@ -239,5 +372,13 @@ figure > a {
 
   figure.third figcaption {
     width: 100%;
+  }
+  .fifth-block {
+    padding: 50px; /* Increased padding for larger screens */
+  }
+
+  .sixth-block::after,
+  .sixth-block::before {
+    display: none; // Hide dividing lines on smaller screens
   }
 }
