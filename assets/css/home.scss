@@ -43,7 +43,7 @@ canvas {
 }
 
 .second-heading-h2 {
-  font-size: 55px; /* Large font size for the subheading */
+  font-size: 35px; /* Large font size for the subheading */
   color: #b6804d; /* Teal text color for subheading */
   margin-top: 0;
   margin-bottom: 50px; /* Spacing below the subheading */
@@ -294,64 +294,66 @@ figure > a {
 /// 
 
 ////////////////////////////
-// Sixth block for Projects with 4x2 layout
+/// sixth block, projects
 .sixth-block {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, auto);
-  gap: 20px; // Adjust based on your spacing preference
+  padding: 50px 0; // Space above and below
   color: #fff; // White text color
   background-color: #000; // Black background
-  padding: 50px 0; // Space above and below
+  text-align: left; // Align text to the left
+  font-family: Avenir, "Avenir", sans-serif; // Match font with the rest of the site
 }
 
-.sixth-block .text-block,
-.sixth-block .image-block {
-  display: flex;
-  align-items: center; // Aligns content vertically in the center
-  justify-content: center; // Centers content horizontally
-  padding: 20px; // Padding inside each block
+.projects-table {
+  width: 100%;
+  border-collapse: collapse; // Remove gaps between cells
 }
 
-.sixth-block .text-block {
-  text-align: justify; // Justifies the text within the text blocks
+.projects-table td {
+  vertical-align: top; // Align text to the top of the cell
+  padding: 20px; // Add padding inside the table cells
+  color: #fff; // Match the text color with the heading color
 }
 
-.sixth-block .image-block img {
-  max-width: 100%; // Ensure the image is responsive and doesn't overflow its container
-  height: auto; // Maintain aspect ratio
-  border-radius: 4px; // Optional: Adds rounded corners to the image
+.projects-table td.project-title {
+  color: #b6804d; // Title color matching subheading style
+  font-size: 25px; 
+  font-weight: bold;
 }
 
-// Dividing lines
-.sixth-block::after,
-.sixth-block::before {
-  content: '';
-  position: absolute;
-  background-color: #fff; // White color for the dividing lines
+.project-blurb {
+  width: 70%; // Width of the blurb column
+  text-align: justify; // Justifies the text within the blurbs
+  font-size: 20px; // Match with paragraph style
+  color: #fff; // Blurb text color
 }
 
-.sixth-block::after {
-  // Vertical line
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  width: 2px; // Thickness of the line
-  transform: translateX(-50%); // Centers the line
+h2.second-heading-h2 {
+  margin-top: 0;
+  color: #fff; // Ensures headings are white to match the text color
 }
 
-.sixth-block::before {
-  // Horizontal line
-  top: 50%;
-  left: 0;
-  right: 0;
-  height: 2px; // Thickness of the line
-  transform: translateY(-50%); // Centers the line
+p {
+  margin: 0; // Removes margin from paragraphs for a tighter layout
+  font-size: 20px; // Consistent font size for the paragraph
+  line-height: 1.6; // Improved readability with line spacing
 }
 
-.full-width {
-  grid-column: 1 / -1; // Span from the first to the last column
+@media (max-width: 768px) {
+  .projects-table {
+    display: block; // Stack table elements on smaller screens
+  }
+
+  .project-title, .project-blurb {
+    width: 100%; // Take full width on smaller screens
+    display: block; // Block display for easier stacking
+    padding: 10px 0; // Reduce padding for smaller screens
+  }
+
+  .project-title {
+    margin-bottom: 10px; // Add space between title and blurb
+  }
 }
+
 ////////////////////////////
 ////////////////////////////
 /// 
