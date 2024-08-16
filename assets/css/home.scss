@@ -277,6 +277,13 @@ figure > a {
   position: relative; /* Needed for absolute positioning of the custom bullet */
 }
 
+.publication-title {
+  width: 100%; // Take full width on smaller screens
+  display: block; // Block display for easier stacking
+  padding: 10px 0; // Reduce padding for smaller screens
+}
+
+
 .fifth-block-list li::before {
   content: ''; /* The actual bullet point */
   width: 6px; /* Width of the custom bullet */

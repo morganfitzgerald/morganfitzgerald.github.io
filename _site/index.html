@@ -121,6 +121,12 @@
                 <li class="masthead__menu-item">
                     <a href="/#projects">Projects</a>
                 </li>
+            
+            
+            
+                <li class="masthead__menu-item">
+                    <a href="/#initiatives">Initiatives</a>
+                </li>
             </ul>
         
         <button class="greedy-nav__toggle hidden" type="button">
@@ -196,8 +202,10 @@
 </div>
 
   
-  <h1 class="large-heading-h1">Publications</h1>
   <div id = "publications" class="fifth-block">
+  <div class="publication-title"></div>
+    <h1 class="large-heading-h1">Publications</h1>
+ 
       <ul>
           <li>
             <strong>Fitzgerald</strong>, M. C., Saelzler, U. G., & Panizzon, M. S. (2021). Sex Differences in Migraine: A Twin Study. Frontiers in Pain Research, 2, 113. (<a href=" https://doi.org/10.3389/fpain.2021.766718">paper</a>) 
@@ -227,30 +235,62 @@
         <h1 class="large-heading-h1">Projects</h1>
       </div>
 
+        <!-- Disclaimer Box -->
+      <div class="disclaimer-box" style="background-color: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; padding: 10px; margin-top: 15px; border-radius: 5px;">
+    <p><strong>Disclaimer:</strong> Due to ongoing work on a patent application, I am unable to share the source code or provide a link to the GitHub repository for these projects at this time. Thank you for your understanding.</p>
+      </div>
+
       <table class="projects-table">
         <tr>
           <td class="project-title">1. Tool Introduction: Validate our Model and Demonstrate Stability</td>
           <td class="project-blurb">
-            <p>This project focuses on introducing and validating a new ECG parameterization tool designed to provide accurate and stable analysis across multiple datasets of healthy individuals. By benchmarking against established datasets like MIT-BIT and PTB-XL, the project aims to demonstrate the stability of waveform shape parameters over time and their relationship with demographic covariates, such as age, sex, and BMI.</p>
+            <p>This project focuses on introducing and validating a new ECG parameterization tool designed to provide accurate and stable analysis across multiple datasets of healthy individuals. By benchmarking against established datasets, the project aims to demonstrate the stability of waveform shape parameters over time and their relationship with demographic covariates, such as age, sex, and BMI.</p>
           </td>
         </tr>
         <tr>
           <td class="project-title">2. Physiological Relevance: Waveform Shape Parameters and Cardiac Pathologies</td>
           <td class="project-blurb">
-            <p>This project explores the physiological relevance of waveform shape parameters by applying the ECG tool to a large dataset from the MIMIC IV database. The goal is to identify characteristic ECG features associated with specific cardiac pathologies, such as atrial fibrillation and ventricular tachycardia, and compare these parameters against existing standards, enhancing diagnostic precision.</p>
+            <p>This project explores the physiological relevance of waveform shape parameters by applying the ECG tool to a large open-source dataset. The goal is to identify characteristic ECG features associated with specific cardiac pathologies, such as atrial fibrillation and ventricular tachycardia, and compare these parameters against existing standards, enhancing diagnostic precision.</p>
           </td>
         </tr>
         <tr>
           <td class="project-title"> 3. Time Variance: Probing Variability of Parameters Across Time and Pathologies</h2></td>
           <td class="project-blurb">
-            <p>This project investigates the variability of ECG parameters over time within individuals, focusing on how these variations can reveal insights into cardiac pathologies. The research aims to understand the time-varying aspects of ECG parameters, with the potential to detect conditions like arrhythmias based on the consistency of the model's performance over repeated cycles.</p>
+            <p>This project investigates the variability of ECG parameters over time within individuals, focusing on how these variations can reveal insights into cardiac pathologies. The research aims to understand the time-varying aspects of ECG parameters, with the potential to detect conditions like arrhythmias.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="project-title">4. Extending ECG Parameterization Toolbox to Mice</td>
+          <td class="project-blurb">
+            <p>This project focuses on analyzing electrocardiogram (ECG) data from mice to investigate cardiac function and identify potential biomarkers related to cardiovascular diseases. By applying our advanced signal processing toolbox, the research aims to understand the nuances of murine cardiac physiology and how it parallels or diverges from human cardiac patterns. Insights gained from this study could contribute to translational research, bridging the gap between preclinical animal models and human cardiac health.</p>
           </td>
         </tr>
       </table>
     </div>
 
       
-  
+    <div id="initiatives" class="sixth-block">
+      <div id="Data Science Initiatives" class="sixth-block">
+      <div class="projects-title">
+        <h1 class="large-heading-h1">Data Science Initiatives</h1>
+      </div>
+
+
+      <table class="projects-table">
+        <tr>
+          <td class="project-title">NeuroNest: Bridging Data Science and Brain Science</td>
+          <td class="project-blurb">
+            <p><a href="https://neurohackademy2024.github.io/NeuroNest/index.html">NeuroNest</a> is an innovative platform dedicated to the intersection of data science and neuroimaging. It offers accessible and engaging content for individuals interested in brain science, including tutorials, coding snippets, project ideas, and insightful articles on cutting-edge technologies. Built collaboratively with a team of researchers during Neurohackademy at the University of Washington, NeuroNest aims to support learners and researchers at all levels by providing resources that foster continuous learning and collaboration. Contributions include the <a href="https://neurohackademy2024.github.io/NeuroNest/ieeg_info.html">iEEG informational page</a> and a comprehensive <a href="https://colab.research.google.com/drive/1n8J-Nh8vzs2c6YPZ1bYQFnPGGRbrGKQG">tutorial on EEG preprocessing and data visualization</a>, which empower users to enhance their neuroimaging analysis skills.</p>
+          </p>
+        </tr>
+      </table>
+    </div>
+             <!-- Add the banner image -->
+    <div class="banner-image">
+      <img src="/assets/images/Neurohackademy.png" alt="Neurohackademy Banner">
+      <div class="image-overlay-text">Neurohackademy 2024, University of Washington</div>
+    </div>
+    
     </div>
   
   
