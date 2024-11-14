@@ -12,7 +12,11 @@ toc: true
 
 <ul>
     <li>
-    Fitzgerald, M. C., Saelzler, U. G., & Panizzon, M. S. (2021). Sex Differences in Migraine: A Twin Study. Frontiers in Pain Research, 2, 113. (<a href=" https://doi.org/10.3389/fpain.2021.766718">paper</a>) 
+    Fitzgerald, M., Kosik, E., & Voytek, B. (2024). Unveiling hidden sources of noise. eLife, 13, e102878.(<a href=" https://elifesciences.org/articles/102878">paper</a>) 
+    </li>
+     <br/>
+    <li>
+    Fitzgerald, M., Saelzler, U. G., & Panizzon, M. S. (2021). Sex Differences in Migraine: A Twin Study. Frontiers in Pain Research, 2, 113. (<a href=" https://doi.org/10.3389/fpain.2021.766718">paper</a>) 
     </li>
      <br/>
     <li>
@@ -23,6 +27,10 @@ toc: true
 </ul>
 <h1><span ><strong>Selected Posters and Presentations</strong></span></h1>
 <ul>
+    <li>
+    Society for Neuroscience. 'Assessing Electrocardiogram Waveform Interference in Simulated Electroencephalogram Signals'. October 2024.
+    </li>
+     <br/>
     <li>
     American Headache Society. ‘Mechanisms of Sex Differences in Migraine: A Twin Study – The need to consider sex as a variable of interest’. June 2022.
     </li>
