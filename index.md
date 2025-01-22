@@ -15,3 +15,4 @@ title: "Home"
     <a href="{{ paginator.next_page_path }}">Next</a>
   {% endif %}
 </div>
+
