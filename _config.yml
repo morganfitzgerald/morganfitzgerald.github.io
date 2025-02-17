@@ -253,6 +253,8 @@ defaults:
       path: ""
       type: posts
     values:
+      sitemap: false
+      cache_busting: true
       layout: single
       author_profile: false
       read_time: true
