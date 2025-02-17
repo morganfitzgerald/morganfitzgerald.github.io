@@ -54,18 +54,6 @@ feature_row:
     <!-- </h1> -->
   </div>
 
-
-<h1>TEST CHANGE - HOMEPAGE</h1>
-
-<html>
-  <div align="center">
-    <p>This is a test to see if home.md is updating the homepage.</p>
-  </div>
-
-  {% include feature_row %}
-
-</html>
-
   {% include feature_row %}
 
 
