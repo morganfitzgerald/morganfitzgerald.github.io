@@ -1,29 +1,40 @@
 ---
-layout: splash
+layout: single
 permalink: /
+author_profile: true
 header:
   overlay_color: "#000"
   overlay_filter: "0.3"
+  overlay_image: /assets/images/labmeeting.jpg
+---
+
+# Hi, I'm Morgan.
+
+I'm a Computational Neuroscience PhD student at UC San Diego, developing data-driven tools to understand heart-brain interactions.
+
+My work combines signal processing, statistical modeling, and open-source development to improve how we analyze physiological data — with applications in aging, health monitoring, and wearable technology.
 
 ---
 
-# Welcome!
-<img src="/assets/images/bio-photo.jpg" alt="Morgan Fitzgerald" style="width:50%; margin:auto; display:block; border-radius:50%;">
+<h2 style="color:#2857A7; font-size:2rem;">Projects & Research Highlights</h2>
 
 
-I'm Morgan Fitzgerald, I'm a Computational Neuroscience PhD student at UC San Diego. I develop tools for ECG waveform analysis, study heart-brain interactions, and explore how physiological signals reflect human health.
+### PyHEARTS — ECG Analysis Toolbox
+A Python package for beat-to-beat ECG waveform parameterization — enabling precise modeling of cardiac signals and heart-brain interaction.
+
+[View Project](/projects/){: .btn .btn--primary}
 
 ---
 
-## Explore My Work
+### ECG & Aging Analysis
+Statistical modeling of ECG waveform features across the lifespan using large-scale public health datasets.
 
-<div style="text-align:center">
+[View Project](/projects/){: .btn .btn--primary}
 
-[About](/about/){: .btn .btn--primary}  
-[Projects](/projects/){: .btn .btn--primary}  
-[Publications](/publications/){: .btn .btn--primary}  
-[Outreach](/outreach/){: .btn .btn--primary}  
-[Contact](/contact/){: .btn .btn--primary}
+---
 
+### Open-Source Contributions
+Developer of *PyHEARTS* and contributor to open-source tools for physiological signal analysis.
 
-</div>
+[GitHub](https://github.com/morganfitzgerald){: .btn .btn--primary}
+

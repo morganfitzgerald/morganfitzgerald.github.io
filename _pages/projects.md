@@ -5,7 +5,6 @@ layout: single
 toc: true
 ---
 
-# Projects
 
 ## Translating ECG Data into Insightful Health Metrics
 
