@@ -48,4 +48,4 @@ I’m passionate about using data science to make health insights more accessibl
 
 Outside of research, I’m committed to mentorship, science communication, and advocating for inclusive and accessible health technology.
 
-[Download my CV](/CV/Morgan_Fitzgerald_CV.pdf)
+[Download my CV](/assets/Morgan_Fitzgerald_CV.pdf)
