@@ -59,7 +59,7 @@ plugins:
 
 author:
   name   : "Morgan Fitzgerald"
-  avatar : "/assets/images/me_landscape.png"  # Or whatever image you like
+  avatar : "/assets/images/bio-photo.jpg"  # Or whatever image you like
   bio    : "PhD student in Computational Neuroscience studying heart-brain interactions and ECG signal analysis."
   links:
     - label: "GitHub"
@@ -95,11 +95,33 @@ defaults:
       related: true
   # _pages
   - scope:
-      path: "_pages"
-      type: pages
+      path: "assets/css"
     values:
-      layout: single
-      author_profile: true
+      css: "custom.css"
+
+feature_row_projects:
+  - image_path: /assets/images/heart-param.jpg
+    title: "PyHEARTS — ECG Analysis Toolbox"
+    excerpt: "Python package for beat-to-beat ECG waveform parameterization enabling research on heart-brain interaction and autonomic variability."
+    url: "/projects/"
+    btn_label: "View Project"
+    btn_class: "btn--primary"
+
+  - image_path: /assets/images/heart-param.jpg
+    title: "ECG & Aging Analysis"
+    excerpt: "Statistical modeling of ECG waveform features across the lifespan using public health datasets."
+    url: "/projects/"
+    btn_label: "View Project"
+    btn_class: "btn--primary"
+
+  - image_path: /assets/images/heart-param.jpg
+    title: "Open-Source Contributions"
+    excerpt: "Developer of PyHEARTS and contributor to physiological signal analysis tools."
+    url: "https://github.com/morganfitzgerald"
+    btn_label: "GitHub"
+    btn_class: "btn--primary"
+
+
 
 category_archive:
   type: liquid
