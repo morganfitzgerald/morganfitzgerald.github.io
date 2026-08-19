@@ -16,8 +16,9 @@
 title: "Morgan Fitzgerald"
 email: "mofitzgerald@ucsd.edu"
 description: >-
-  Computational Neuroscience PhD Student at UC San Diego. 
-  I study heart-brain interactions and develop tools for ECG waveform analysis.
+  Computational Neuroscience PhD Student at UC San Diego.
+  I study heart-brain interactions, sex-hormone effects on neural dynamics,
+  and develop PyHEARTS for ECG waveform analysis.
 twitter_username: ""
 github_username: morganfitzgerald
 minimal_mistakes_skin: default
@@ -59,8 +60,8 @@ plugins:
 
 author:
   name   : "Morgan Fitzgerald"
-  avatar : "/assets/images/bio-photo.jpg"  # Or whatever image you like
-  bio    : "PhD student in Computational Neuroscience studying heart-brain interactions and ECG signal analysis."
+  avatar : "/assets/images/Headshot__brown-sweater__office__professional.png"
+  bio    : "PhD student in Computational Neuroscience studying heart-brain coupling, 1/f neural dynamics, and ECG morphology analysis."
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
@@ -100,24 +101,24 @@ defaults:
       css: "custom.css"
 
 feature_row_projects:
-  - image_path: /assets/images/heart-param.jpg
-    title: "PyHEARTS — ECG Analysis Toolbox"
-    excerpt: "Python package for beat-to-beat ECG waveform parameterization enabling research on heart-brain interaction and autonomic variability."
-    url: "/projects/"
+  - image_path: /assets/images/hormone-1f-framework.svg
+    title: "Hormones, 1/f Dynamics & Heart–Brain Coupling"
+    excerpt: "Multi-session MEG study linking sex hormones to aperiodic neural dynamics, oscillatory spectral parameters, and cardiac-evoked cortical responses."
+    url: "/projects/#hormones-1f-dynamics"
     btn_label: "View Project"
     btn_class: "btn--primary"
 
   - image_path: /assets/images/heart-param.jpg
-    title: "ECG & Aging Analysis"
-    excerpt: "Statistical modeling of ECG waveform features across the lifespan using public health datasets."
-    url: "/projects/"
+    title: "PyHEARTS — ECG Analysis Toolbox"
+    excerpt: "Python package for beat-to-beat ECG morphology analysis with Gaussian waveform fitting, record-level T detection, and validated phenotyping (v1.0)."
+    url: "/projects/#pyhearts"
     btn_label: "View Project"
     btn_class: "btn--primary"
 
   - image_path: /assets/images/heart-param.jpg
     title: "Open-Source Contributions"
     excerpt: "Developer of PyHEARTS and contributor to physiological signal analysis tools."
-    url: "https://github.com/morganfitzgerald"
+    url: "https://github.com/PyHEARTS-toolbox/pyhearts"
     btn_label: "GitHub"
     btn_class: "btn--primary"
 

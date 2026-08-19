@@ -12,19 +12,27 @@ toc: true
 
 <ul>
     <li>
-    Fitzgerald, M., Kosik, E., & Voytek, B. (2024). Unveiling hidden sources of noise. eLife, 13, e102878.(<a href=" https://elifesciences.org/articles/102878">paper</a>) 
+    Fitzgerald, M., Kosik, E., & Voytek, B. (2024). Unveiling hidden sources of noise. <em>eLife</em>, 13, e102878. (<a href="https://elifesciences.org/articles/102878">paper</a>)
     </li>
      <br/>
     <li>
-    Fitzgerald, M., Saelzler, U. G., & Panizzon, M. S. (2021). Sex Differences in Migraine: A Twin Study. Frontiers in Pain Research, 2, 113. (<a href=" https://doi.org/10.3389/fpain.2021.766718">paper</a>) 
+    Fitzgerald, M., Saelzler, U. G., & Panizzon, M. S. (2021). Sex Differences in Migraine: A Twin Study. <em>Frontiers in Pain Research</em>, 2, 113. (<a href="https://doi.org/10.3389/fpain.2021.766718">paper</a>)
     </li>
      <br/>
     <li>
-    Fitzgerald, M., Pritschet, L., Santander, T., Grafton, S. T., & Jacobs, E. G. (2020). Cerebellar network organization across the human menstrual cycle. Scientific reports, 10(1), 20732. (<a href="https://doi.org/10.1038/s41598-020-77779-4">paper</a>) 
+    Fitzgerald, M., Pritschet, L., Santander, T., Grafton, S. T., & Jacobs, E. G. (2020). Cerebellar network organization across the human menstrual cycle. <em>Scientific Reports</em>, 10(1), 20732. (<a href="https://doi.org/10.1038/s41598-020-77779-4">paper</a>)
     </li>
 <br/>
 
 </ul>
+
+<h1><span><strong>Manuscripts Under Review</strong></span></h1>
+<ul>
+    <li>
+    Fitzgerald, M., Kosik, E., & Voytek, B. PyHEARTS: Beat-by-beat ECG waveform morphology mapping for interpretable machine learning and AI. <em>Submitted to Nature Computational Science</em>. (<a href="https://github.com/PyHEARTS-toolbox/pyhearts">code</a>)
+    </li>
+</ul>
+
 <h1><span ><strong>Selected Posters and Presentations</strong></span></h1>
 <ul>
     <li>
