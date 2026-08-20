@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 560" role="img" aria-labelledby="title desc">
+  <title id="title">Nested framework: cognitive, neural, and peripheral states</title>
+  <desc id="desc">Three concentric circles showing cognitive states at the center, surrounded by neural dynamics and peripheral physiology.</desc>
+
+  <defs>
+    <style>
+      .ring-title {
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 16px;
+        font-weight: 700;
+      }
+      .center-sub {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 10.5px;
+        fill: #dce6f5;
+      }
+      .idea {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 12.5px;
+        fill: #3a4654;
+      }
+      .caption {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 12.5px;
+        fill: #5a6570;
+      }
+    </style>
+  </defs>
+
+  <rect width="680" height="560" fill="#f7f8fa"/>
+
+  <!-- Outer: Peripheral -->
+  <circle cx="340" cy="270" r="198" fill="#d9ebe8" stroke="#2f6f68" stroke-width="2.5"/>
+  <!-- Middle: Neural -->
+  <circle cx="340" cy="270" r="130" fill="#d6e2f2" stroke="#2857A7" stroke-width="2.5"/>
+  <!-- Inner: Cognitive -->
+  <circle cx="340" cy="270" r="72" fill="#2857A7" stroke="#1f427f" stroke-width="2"/>
+
+  <!-- Center -->
+  <text class="ring-title" x="340" y="258" text-anchor="middle" fill="#ffffff">Cognitive</text>
+  <text class="ring-title" x="340" y="278" text-anchor="middle" fill="#ffffff">states</text>
+  <text class="center-sub" x="340" y="298" text-anchor="middle">attention / memory / arousal</text>
+
+  <!-- Ring titles -->
+  <text class="ring-title" x="340" y="158" text-anchor="middle" fill="#2857A7">Neural</text>
+  <text class="ring-title" x="340" y="92" text-anchor="middle" fill="#2f6f68">Peripheral</text>
+
+  <!-- Neural ideas -->
+  <text class="idea" x="230" y="225" text-anchor="middle">1/f dynamics</text>
+  <text class="idea" x="450" y="225" text-anchor="middle">oscillations</text>
+  <text class="idea" x="230" y="325" text-anchor="middle">cortical networks</text>
+  <text class="idea" x="450" y="325" text-anchor="middle">MEG / EEG</text>
+
+  <!-- Peripheral ideas -->
+  <text class="idea" x="175" y="165" text-anchor="middle">heart / ECG</text>
+  <text class="idea" x="505" y="165" text-anchor="middle">hormones</text>
+  <text class="idea" x="155" y="355" text-anchor="middle">autonomic tone</text>
+  <text class="idea" x="525" y="355" text-anchor="middle">arousal signals</text>
+  <text class="idea" x="340" y="430" text-anchor="middle">cardiac-brain coupling</text>
+
+  <text class="caption" x="340" y="500" text-anchor="middle">Cognitive states sit at the center, indexed by nested neural and peripheral physiology</text>
+</svg>

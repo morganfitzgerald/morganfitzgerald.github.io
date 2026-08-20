@@ -7,9 +7,7 @@ toc: true
 
 My research asks what physiological signals can tell us about cognitive state. I develop open-source tools and statistical models to disentangle overlapping cardiac and neural sources and to quantify how autonomic, hormonal, and arousal-related physiology shape cortical activity.
 
-![Conceptual map linking hormones, brain activity patterns, and heart-brain coupling across the menstrual cycle](/assets/images/hormone-connecting-ideas.png)
-
-*Conceptual overview: how hormone fluctuations relate to background brain activity and the brain's response to the heartbeat.*
+![Three concentric circles linking cognitive states, neural dynamics, and peripheral physiology](/assets/images/concentric-states-framework.svg)
 
 ---
 
@@ -30,9 +28,9 @@ Complementary analyses target periodic spectral features (e.g., alpha peak frequ
 **3. Cardiac-evoked potentials (TRF-HEP)**  
 Heart-brain coupling is quantified via temporal response function (TRF) kernels: a cardiac regressor predicts MEG sensor activity, and kernel morphology features (peak lag, amplitude, voltage rise, and decay) are related to session-level hormone variability. This provides a direct link between cardiac physiology and cortical responses relevant to cognitive state.
 
-![How estradiol relates to brain background activity and heart-linked brain responses](/assets/images/hormone-analysis-framework.png)
+![How hormone levels relate to background brain activity and the brain's response to the heartbeat](/assets/images/hormone-analysis-framework.svg)
 
-*In short: we asked whether estradiol tracks with two kinds of brain signals (background neural activity and the brain's response to the heartbeat), and whether those two signals tend to change together.*
+*Hormone levels may shape both background brain activity and heart-linked brain responses. We also ask whether those two brain signals change together.*
 
 ### Methods highlights
 
