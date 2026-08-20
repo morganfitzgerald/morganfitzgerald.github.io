@@ -5,42 +5,44 @@ layout: single
 toc: true
 ---
 
-My research bridges computational neuroscience, cardiovascular physiology, and endocrine biology. I develop open-source tools and statistical models to extract interpretable metrics from physiological signals — with a focus on heart-brain interactions and how sex hormones shape neural dynamics.
+My research asks what physiological signals can tell us about cognitive state. I develop open-source tools and statistical models to disentangle overlapping cardiac and neural sources — and to quantify how autonomic, hormonal, and arousal-related physiology shape cortical activity.
 
 ![Analysis framework: hormones, MEG spectral features, and heart-brain coupling](/assets/images/hormone-1f-framework.svg)
 
 ---
 
-## Hormones, 1/f Dynamics & Heart–Brain Coupling {#hormones-1f-dynamics}
+## Physiological Signals & Cognitive State {#hormones-1f-dynamics}
 
-This project investigates how sex hormones relate to large-scale neural dynamics and cardiac-evoked cortical activity, using multi-session magnetoencephalography (MEG) paired with endocrine measurements in female and male adults.
+The heart can influence neural activity, but cardiac signals can also contaminate the brain recordings used to measure cognition. This project investigates how sex hormones and autonomic physiology relate to large-scale neural dynamics and cardiac-evoked cortical activity — with the goal of understanding how physiological state tracks with, and potentially indexes, cognitive function.
+
+Using multi-session magnetoencephalography (MEG) paired with endocrine measurements, I model how within-subject hormone and arousal-related fluctuations associate with neural dynamics across Yeo-8 cortical networks.
 
 ### Three linked analysis streams
 
 **1. Aperiodic (1/f) neural dynamics**  
-Using SpecParam on source-reconstructed ROI power spectra, I model how within-subject hormone fluctuations associate with aperiodic exponent and offset across Yeo-8 cortical networks. Bayesian hierarchical models reveal sex-dissociated effects — for example, estradiol and progesterone associate with aperiodic flattening in females but show distinct or absent patterns in males.
+Using SpecParam on source-reconstructed ROI power spectra, I model how hormone fluctuations associate with aperiodic exponent and offset across cortical networks. Bayesian hierarchical models reveal sex-dissociated effects on the neural background activity that supports cognitive processing.
 
 **2. Oscillatory spectral parameters**  
-Complementary analyses target periodic spectral features (e.g., alpha peak frequency) using the same network-level Bayesian framework, characterizing hormone-linked shifts in oscillatory structure across cortex.
+Complementary analyses target periodic spectral features (e.g., alpha peak frequency) using the same network-level Bayesian framework, characterizing hormone-linked shifts in oscillatory structure linked to attention and arousal.
 
 **3. Cardiac-evoked potentials (TRF-HEP)**  
-Heart-brain coupling is quantified via temporal response function (TRF) kernels: a cardiac regressor predicts MEG sensor activity, and kernel morphology features — peak lag, amplitude, voltage rise, and decay — are related to session-level hormone variability. Primary models use hierarchical random intercepts and slopes across Global and Yeo-8 networks, with a frozen 24-fit grid (2 sexes × 3 hormones × 4 features).
+Heart-brain coupling is quantified via temporal response function (TRF) kernels: a cardiac regressor predicts MEG sensor activity, and kernel morphology features — peak lag, amplitude, voltage rise, and decay — are related to session-level hormone variability. This provides a direct link between cardiac physiology and cortical responses relevant to cognitive state.
 
 ### Methods highlights
 
 - Multi-session MEG design with within-subject hormone z-scoring at session grain
 - Source reconstruction with HCP-MMP1 parcellation mapped to Yeo-8 networks
-- Cardiac artifact removal (ICA) before TRF fitting
+- Cardiac artifact removal (ICA) before TRF fitting — separating contamination from coupling
 - Bayesian hierarchical models (PyMC) with Student-t likelihoods and network-specific population slopes
-- Sex-dissociation analyses comparing female and male hormone–neural associations
+- Machine learning and reproducible pipelines for large-scale physiological datasets
 
 ---
 
-## PyHEARTS: Beat-by-Beat ECG Analysis Toolbox {#pyhearts}
+## PyHEARTS: Cardiac Signal Analysis at Scale {#pyhearts}
 
-In collaboration with Eena Kosik (UCSD Cognitive Science PhD student), I developed **PyHEARTS** — a Python toolbox for beat-by-beat ECG morphology analysis. Version 1.0 was released in July 2026.
+In collaboration with Eena Kosik (UCSD Cognitive Science PhD student), I co-developed **PyHEARTS** — an open-source Python toolbox for beat-by-beat ECG morphology analysis. The framework has been validated across more than 30,000 individuals and is currently under review at *Nature Computational Science*.
 
-**PyHEARTS** (Python Heart Evaluation and Analysis for Rhythm and Temporal Shape) takes a single-lead ECG, detects cardiac cycles, fits physiologically constrained Gaussian waveforms, and returns a structured feature table for each beat.
+**PyHEARTS** (Python Heart Evaluation and Analysis for Rhythm and Temporal Shape) was built to answer a core question in cognitive neuroscience: when we measure brain activity, how much of what we see reflects true neural dynamics versus cardiac contamination? By providing precise, beat-level cardiac phenotyping, PyHEARTS helps disentangle overlapping physiological sources at scale.
 
 ### What it does
 
@@ -51,19 +53,11 @@ In collaboration with Eena Kosik (UCSD Cognitive Science PhD student), I develop
 
 ### Key capabilities
 
-- **Beat-to-beat Gaussian modeling** — fit, simulate, and manipulate individual waveform components
+- **Beat-to-beat Gaussian modeling** — interpretable cardiac features for linking physiology to cognition
 - **Record-level T detection** — global T-wave fiducial with Gaussian morphology fallback
 - **R-peak auto-polarity** — handles inverted QRS / lead polarity automatically
 - **Reproducible output** — CSV feature tables plus metadata JSON with pipeline version and resolved config
-- **Validation** — held-out evaluation on LUDB (200 records, 1831 manual beats); development benchmarks on QTDB and SPH
-
-### Recent updates (2026)
-
-- Fitbounds clip fix for Gaussian `curve_fit` stability
-- Record-T merge fusion improving T-wave sensitivity on LUDB
-- Frozen held-out validation protocol under `validation/`
-- Mouse morphology T-search improvements
-- HRV metrics now computed from pre-morphology R-peak intervals
+- **Large-scale validation** — validated across 30,000+ individuals; held-out evaluation on LUDB (200 records, 1831 manual beats)
 
 ### Getting started
 
@@ -80,13 +74,13 @@ Requires Python 3.10+. See the repository for installation, example notebooks, a
 
 ---
 
-## Toward Precision Biomarkers for Health & Aging
+## Toward Interpretable Physiology for Cognitive Neuroscience
 
 Together, these projects aim to:
 
-- Advance understanding of heart-brain coupling and its hormonal modulation
-- Improve modeling of ECG waveforms for interpretable cardiovascular phenotyping
-- Enable more accurate physiological biomarkers for research and health monitoring
+- Clarify what physiological data can tell us about attention, memory, and cognitive state
+- Disentangle cardiac influence from neural contamination in brain recordings
+- Build scalable, reproducible tools for linking autonomic and endocrine physiology to cortical dynamics
 
 ---
 
