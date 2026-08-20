@@ -17,7 +17,7 @@ title: "Morgan Fitzgerald"
 email: "mofitzgerald@ucsd.edu"
 description: >-
   Cognitive Neuroscience PhD Candidate at UC San Diego.
-  I study physiological signals that accompany cognitive state — disentangling
+  I study physiological signals that accompany cognitive state, disentangling
   cardiac and neural contributions to understand attention, memory, and arousal.
 twitter_username: ""
 github_username: morganfitzgerald
@@ -103,14 +103,14 @@ defaults:
 feature_row_projects:
   - image_path: /assets/images/hormone-1f-framework.svg
     title: "Physiological Signals & Cognitive State"
-    excerpt: "MEG study linking hormones and autonomic physiology to neural dynamics — quantifying how arousal and endocrine state shape cortical activity."
+    excerpt: "MEG study linking hormones and autonomic physiology to neural dynamics, quantifying how arousal and endocrine state shape cortical activity."
     url: "/projects/#hormones-1f-dynamics"
     btn_label: "View Project"
     btn_class: "btn--primary"
 
   - image_path: /assets/images/heart-param.jpg
-    title: "PyHEARTS — Cardiac Analysis at Scale"
-    excerpt: "Open-source beat-to-beat ECG toolbox validated across 30,000+ individuals — built to disentangle cardiac from neural contributions in physiological data."
+    title: "PyHEARTS: Cardiac Analysis at Scale"
+    excerpt: "Open-source beat-to-beat ECG toolbox validated across 30,000+ individuals, built to disentangle cardiac from neural contributions in physiological data."
     url: "/projects/#pyhearts"
     btn_label: "View Project"
     btn_class: "btn--primary"
