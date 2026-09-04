@@ -60,7 +60,7 @@ plugins:
 
 author:
   name   : "Morgan Fitzgerald"
-  avatar : "/assets/images/Headshot__brown-sweater__office__professional.png"
+  avatar : "/assets/images/Fitzgerald_Morgan_headshot_2026.png"
   bio    : "PhD candidate in cognitive neuroscience studying physiological signals of cognitive state, heart-brain coupling, and scalable cardiac analysis with PyHEARTS."
   links:
     - label: "GitHub"
